@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Definition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style type="text/css">
+  .flip3D{  /*change of border*/
+    width: 270px;
+    height: 240px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;  
+
+  }
+  .flip3D > .front{ /*change shape of inner border*/
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #FC0;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    justify-content: center;
+    margin-left: 65px;
+    
+
+  } 
+
+  .flip3D > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #80BFFF;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    margin-left: 60px;
+    
+
+
+  }
+  .flip3D:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+
+  }
+  .flip3D:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    
+  }
+  /*:checked + .flip3D {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}*/
+  .back p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  .front p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  #pic{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+</head>
+<body>
+
+  <div class="box1">
+      <a href="C:\Users\HP\Desktop\HTML project\Project\Homepage\header.html" class="box2">
+        <i class="fas fa-home" style="font-size: 10mm">Home</i>
+      </a>
+  </div>
+<u><h1 style="font-family: lena" align="center">Job Definition</h1></u><br>
+<center><i>Try to guess which type of job belong to this definition<br>If you guess it correctly give yourself a point!! ENJOY</i><br><br><b>Tip:</b> Just put the cursur over the pic to reveal the answer</center>
+<hr align="center" width="180">
+<br><br>
+  <div class="flip3D"> 
+    <div class="front">
+      <p><b>Definition:</b><br>a person who flies an aircraft</p>
+    </div>
+    <div class="back">
+      <img src="pilot.jpg" id="pic" alt="about">
+      <div class="centered">Pilot</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a person with a medical degree whose job is to treat people who are ill or hurt</p>
+    </div>
+    <div class="back">
+      <img src="doctor.jpg" id="pic" alt="about">
+      <div class="centered">Doctor</div>
+    </div>
+  
+  </div>
+
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a skilled and trained cook who works in a hotel or restaurant, especially the most important cook</p>
+    </div>
+    <div class="back">
+      <img src="chef.jpg" id="pic" alt="about">
+      <div class="centered">Chef</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>someone whose job is to teach in a school or college</p>
+    </div>
+    <div class="back">
+      <img src="teacher.jpg" id="pic" alt="about">
+      <div class="centered">Teacher</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a male or female member of the police force</p>
+    </div>
+    <div class="back">
+      <img src="police officer.jpg" id="pic" alt="about">
+      <div class="centered">Police Officer</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>an expert who studies or works in one of the sciences</p>
+    </div>
+    <div class="back">
+      <img src="scientist.jpg" id="pic" alt="about">
+      <div class="centered">Scientist</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a person whose job is to stop fires from burning</p>
+    </div>
+    <div class="back">
+      <img src="firefighter.jpg" id="pic" alt="about">
+      <div class="centered">Firefighter</div>
+    </div>
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a person whose job is to design or build machines, engines, or electrical equipment, or things such as roads, railways, or bridges, using scientific principles</p>
+    </div>
+    <div class="back">
+      <img src="engineer.jpg" id="pic" alt="about">
+      <div class="centered">Engineer</div>
+    </div>
+  </div>
+  
+</body>
+</html>

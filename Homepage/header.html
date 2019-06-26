@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlashCard Master</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+		body {
+			/*background-color: #111;*/
+			margin: 0px;
+		}
+
+
+	.title {
+		padding: 200px;
+		font-family: "the devil net";
+		text-align: center;
+		color: #FFF;
+		
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		letter-spacing: 2px;
+		background: black;
+	}
+
+	h1 {
+		background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+		background-size: cover;
+		color: transparent;
+		-moz-background-clip: text;
+		-webkit-background-clip: text;
+		text-transform: uppercase;
+		font-size: 100px;
+		line-height: .9;
+		margin: 10px 0;
+
+	}
+
+	
+	#div{
+		margin-top: 40px;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		display: flex;
+		padding: 0px;
+
+	}
+
+	#boxes{    /*3 boxes*/
+		border: 1px solid gray;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+		width: 24%;
+		height: 485px;
+
+		justify-content: center;
+
+		box-shadow: 4px 4px 3px 3px gray;
+	}
+
+
+	#box1{ 		/*dogs*/
+		background-image: url("house.jpg");
+		background-size: cover;
+		height: 200px;
+
+	}
+
+	#box2{		/*wolf*/
+		background-image: url("game pattern.jpg");
+		background-size: cover;
+		height: 200px;
+	}
+
+	#box3{
+		background-image: url("books.jpg");
+		background-size: cover;
+		height: 200px;
+	}
+	#box4{
+		background-image: url("about.jpg");
+		background-size: cover;
+		height: 200px;
+	}
+
+	#caption{   /*Caption for each picture*/
+		margin-left: 7px;
+		font-weight: bold;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+		font-family: "the devil net";
+		font-size: 10mm;
+	}
+
+	.text{
+		margin-top: 19px;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-family: lena;
+	}
+
+	.readmore{
+	
+		margin-top: 30px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 50px;
+		background-color: black;
+		cursor: pointer;
+		font-family: firsttake;
+
+	}
+
+	@font-face{
+		font-family: firsttake;
+		src:url(FirstTake.ttf);
+	}
+
+	.linkcolor{
+		color: white !important;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="title">
+		 <h1>FlashCard <br>Master</h1>
+	</div>
+	
+		<div id="div">
+
+		<div id="boxes">
+			<div id="box1"></div>
+			<div id="caption">Home</div>
+			<hr style="width: 80%;">
+			<div class="text">Check out the choices we have provide to you and hope you enjoy the visit and have fun.</div>
+
+			<div class="readmore"><div><a class="linkcolor" href="https://www.google.com.kh" target="_blank"><p style="color: white;">Check Out</p></a></div></div>
+
+		</div>
+		<div id="boxes">
+			<div id="box2"></div>
+			<div id="caption">Game</div>
+			<hr style="width: 80%;">
+			<div class="text">There is flashcard game and picture dictionary for kids to play. Have fun and learn at the same time!</div>
+
+			<div class="readmore">
+				<div><a class="linkcolor" href="C:\Users\HP\Desktop\HTML project\Project\Boxes\boxes.html" target=""><p style="color: white;">Check Out</p></a></div></div>
+
+			</div>
+		<div id="boxes">
+			<div id="box3"></div>
+			<div id="caption">Book</div>
+			<hr style="width: 80%;">
+			<div class="text">Given you the top selling books for download. Many to choose from and enjoy the reading.</div>
+
+			<div class="readmore"><div><a class="linkcolor" href="C:\Users\HP\Desktop\HTML project\Project\books\books.html"><p style="color: white;">Check Out</p></a></div></div>
+		</div>
+
+		<div id="boxes">
+			<div id="box4"></div>
+			<div id="caption">About</div>
+			<hr style="width: 80%;">
+			<div class="text">Thanks for browsing and check it out to know more about Us.</div>
+			<br>
+			<div class="readmore"><div><a class="linkcolor" href="C:\Users\HP\Desktop\HTML project\Project\About Us\contact.html" target=""><p style="color: white;">Check Out</p></a></div></div>
+		</div>
+
+	</div>
+
+</body>
+</html>

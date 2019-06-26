@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruit Definition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <style type="text/css">
+  .flip3D{  /*change of border*/
+    width: 270px;
+    height: 240px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;  
+
+  }
+  .flip3D > .front{ /*change shape of inner border*/
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #FC0;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    justify-content: center;
+    margin-left: 65px;
+    
+
+  } 
+
+  .flip3D > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #80BFFF;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    margin-left: 60px;
+    
+
+
+  }
+  .flip3D:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+
+  }
+  .flip3D:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    
+  }
+  /*:checked + .flip3D {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}*/
+  .back p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  .front p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  #pic{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+</head>
+<body>
+
+  <div class="box1">
+      <a href="C:\Users\HP\Desktop\HTML project\Project\Homepage\header.html" class="box2">
+        <i class="fas fa-home" style="font-size: 10mm">Home</i>
+      </a>
+  </div>
+<u><h1 style="font-family: lena" align="center">Fruit Definition</h1></u><br>
+<center><i>Try to guess which type of fruit belong to this definition<br>If you guess it correctly give yourself a point!! ENJOY</i><br><br><b>Tip:</b> Just put the cursur over the pic to reveal the answer</center>
+<hr align="center" width="180">
+<br><br>
+  <div class="flip3D"> 
+    <div class="front">
+      <p><b>Definition:</b><br>the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.</p>
+    </div>
+    <div class="back">
+      <img src="apple.jpg" id="pic" alt="about">
+      <div class="centered">Apple</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a pale yellow oval citrus fruit with thick skin and fragrant, acidic juice.</p>
+    </div>
+    <div class="back">
+      <img src="lemon.jpg" id="pic" alt="about">
+      <div class="centered">Lemon</div>
+    </div>
+  
+  </div>
+
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large tropical Asian tree (Artocarpus heterophyllus) related to the breadfruit that yields a fine-grained yellow wood and immense fruits which contain an edible pulp and nutritious seeds</p>
+    </div>
+    <div class="back">
+      <img src="jackfruit.jpg" id="pic" alt="about">
+      <div class="centered">Jack fruit</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br> a fruit that is shaped somewhat like a finger, is usually yellow when ripe, and grows in bunches on a large treelike tropical plant with very large leaves.</p>
+    </div>
+    <div class="back">
+      <img src="Banana.jpg" id="pic" alt="about">
+      <div class="centered">Banana</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large round juicy citrus fruit with a tough bright reddish-yellow rind. </p>
+    </div>
+    <div class="back">
+      <img src="orange.jpg" id="pic" alt="about">
+      <div class="centered">Orange</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large juicy tropical fruit consisting of aromatic edible yellow flesh surrounded by a tough segmented skin and topped with a tuft of stiff leaves. </p>
+    </div>
+    <div class="back">
+      <img src="pineapple.jpg" id="pic" alt="about">
+      <div class="centered">Pineapple</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a sweet soft red fruit with a seed-studded surface. </p>
+    </div>
+    <div class="back">
+      <img src="strawberry.jpg" id="pic" alt="about">
+      <div class="centered">Strawberry</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a night-blooming climbing cactus, having red skin covered with large scales and white or pink flesh containing small black seeds. </p>
+    </div>
+    <div class="back">
+      <img src="dragon fruit.jpg" id="pic" alt="about">
+      <div class="centered">Dragon fruit</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a tropical fruit similar to a lychee, with a brown shell and sweet,white flesh around a round, shiny, black seed </p>
+    </div>
+    <div class="back">
+      <img src="longan.jpg" id="pic" alt="about">
+      <div class="centered">Longan</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a tropical fruit with a red or yellow hairy shell and sweet whiteflesh around a white seed </p>
+    </div>
+    <div class="back">
+      <img src="rambutan.jpg" id="pic" alt="about">
+      <div class="centered">Rambutan</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large oval fruit with a yellowish skin and sweet orange flesh </p>
+    </div>
+    <div class="back">
+      <img src="papaya.jpg" id="pic" alt="about">
+      <div class="centered">Papaya</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large, oval, tropical fruit with a hard skin covered in sharppoints, yellow, orange, or red flesh, and a very strong smell</p>
+    </div>
+    <div class="back">
+      <img src="durian.jpg" id="pic" alt="about">
+      <div class="centered">Durian</div>
+    </div>
+  
+  </div>
+
+
+</body>
+</html>

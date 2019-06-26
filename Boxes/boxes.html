@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boxes</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<style type="text/css">
+		.box1{
+
+      display: flex;
+      direction: row;
+      margin-left: 80px;
+      margin-top: 5px;
+      }
+      .box2{
+        font-size: 25px;
+        padding: 35px;
+        color: grey;
+      }
+      a:link{
+        color: dodgerblue !important;
+      }
+
+      a:{
+        color: black;
+      }
+      
+      a:hover {
+         color: red;
+      }
+
+      .linkcolor{
+			color: whiteo !important;
+		}
+
+	#div{
+		margin-top: 40px;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		display: flex;
+		padding: 0px;
+
+	}
+
+	#boxes{    /*3 boxes*/
+		border: 1px solid gray;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+		width: 24%;
+		height: 485px;
+
+		justify-content: center;
+
+		box-shadow: 4px 4px 3px 3px gray;
+	}
+
+
+	#box1{ 		/*dogs*/
+		background-image: url("en.jpg");
+		background-size: cover;
+		height: 200px;
+
+	}
+
+	#box2{		/*wolf*/
+		background-image: url("google_japanese.png");
+		background-size: cover;
+		height: 200px;
+	}
+
+
+	#caption{   /*Caption for each picture*/
+		margin-left: 7px;
+		font-weight: bold;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+		font-family: "the devil net";
+		font-size: 10mm;
+	}
+
+	.text{
+		margin-top: 19px;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-family: lena;
+	}
+
+	.readmore{
+	
+		margin-top: 30px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 50px;
+		background-color: black;
+		cursor: pointer;
+		font-family: firsttake;
+
+	}
+
+	@font-face{
+		font-family: firsttake;
+		src:url(FirstTake.ttf);
+	}
+
+	.dropbtn {
+	  background-color: black;
+	  margin-left: 30px;
+	  margin-top: 25px;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  width: 300px;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	  s
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content a:hover {background-color: #ddd;}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.readmore{
+		
+			margin-top: 30px;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 50px;
+			background-color: black;
+			cursor: pointer;
+			font-family: firsttake;
+
+		}
+
+		
+	</style>
+</head>
+<body>
+	 <div class="box1">
+      <a href="C:\Users\HP\Desktop\HTML project\Project\Homepage\header.html" class="box2">
+        <i class="fas fa-home">Home</i>
+      </a>
+  	</div>
+
+	<div id="div">
+
+		<div id="boxes">
+			<div id="box1"></div>
+			<div id="caption">English</div>
+			<hr style="width: 80%;">
+			<div class="text">Check out English vocabularies flashcards and hope you enjoy the visit and have fun.</div>
+
+			<div class="dropdown">
+			  <button class="dropbtn">Categories</button>
+			  <div class="dropdown-content">
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\fruit\fruit.html">Fruit</a>
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\Vegetable\vegetable.html">Vagetable</a>
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\Occupation\occupation.html">Occupation</a>
+			  </div>
+			</div>
+		</div>
+		<div id="boxes">
+			<div id="box2"></div>
+			<div id="caption">Japanese</div>
+			<hr style="width: 80%;">
+			<div class="text">Check out Japanese vocabularies flashcards and hope you enjoy the visit and have fun.</div>
+
+			<div class="dropdown">
+			  <button class="dropbtn">Categories</button>
+			  <div class="dropdown-content">
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\Body parts\body.html">Body parts</a>
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\Color\color.html">Color</a>
+			    <a href="C:\Users\HP\Desktop\HTML project\Project\Animal\animal.html">Animal</a>
+			  </div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vegetable Definiton</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <style type="text/css">
+  .flip3D{  /*change of border*/
+    width: 270px;
+    height: 240px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;  
+
+  }
+  .flip3D > .front{ /*change shape of inner border*/
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #FC0;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    justify-content: center;
+    margin-left: 65px;
+    
+
+  } 
+
+  .flip3D > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #80BFFF;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    text-align: center;
+    margin-left: 60px;
+    
+
+
+  }
+  .flip3D:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+
+  }
+  .flip3D:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    
+  }
+  /*:checked + .flip3D {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}*/
+  .back p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  .front p{
+    position: relative; 
+    top:40%;
+    transform:  translateY(-50%);
+    font-size:  4mm;
+
+  }
+  #pic{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+</head>
+<body>
+
+  <div class="box1">
+      <a href="C:\Users\HP\Desktop\HTML project\Project\Homepage\header.html" class="box2">
+        <i class="fas fa-home" style="font-size: 10mm">Home</i>
+      </a>
+  </div>
+<u><h1 style="font-family: lena" align="center">Vegetable Definition</h1></u><br>
+<center><i>Try to guess which type of vegetable belong to this definition<br>If you guess it correctly give yourself a point!! ENJOY</i><br><br><b>Tip:</b> Just put the cursur over the pic to reveal the answer</center>
+<hr align="center" width="180">
+<br><br>
+  <div class="flip3D"> 
+    <div class="front">
+      <p><b>Definition:</b><br>a large, round vegetable with large green, white, or purple leaves that can be eaten cooked or uncooked</p>
+    </div>
+    <div class="back">
+      <img src="cabbage.jpg" id="pic" alt="about">
+      <div class="centered">Cabbage</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a long pointed orange root eaten as a vegetable</p>
+    </div>
+    <div class="back">
+      <img src="carrots.jpg" id="pic" alt="about">
+      <div class="centered">Carrot</div>
+    </div>
+  
+  </div>
+
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>the small, red or green seed case from particular types ofpepper plant that is used to make some foods very hot and spicy</p>
+    </div>
+    <div class="back">
+      <img src="chili.jpg" id="pic" alt="about">
+      <div class="centered">Chilli</div>
+    </div>
+  
+  </div>
+
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>an oval, purple vegetable that is white inside and is usually eaten cooked</p>
+    </div>
+    <div class="back">
+      <img src="eggplant.jpg" id="pic" alt="about">
+      <div class="centered">Eggplant</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>also known as water spinach, a green leafy vegetable used as a food in several cuisines of East and Southeast Asia</p>
+    </div>
+    <div class="back">
+      <img src="morningglory.jpg" id="pic" alt="about">
+      <div class="centered">Morning Glory (Water Spinach)</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a vegetable with a strong smell and flavour, made up of several layers surrounding each other tightly in a round shape, usually brown or red on the outside and white inside</p>
+    </div>
+    <div class="back">
+      <img src="onion.jpg" id="pic" alt="about">
+      <div class="centered">Onion</div>
+    </div>
+  
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a round, red fruit with a lot of seeds, eaten cooked oruncooked as a vegetable, for example in salads or sauces </p>
+    </div>
+    <div class="back">
+      <img src="tomato.jpg" id="pic" alt="about">
+      <div class="centered">Tomato</div>
+    </div>
+  </div>
+  <div class="flip3D">
+    <div class="front">
+      <p><b>Definition:</b><br>a large, round vegetable with hard, yellow or orange flesh</p>
+    </div>
+    <div class="back">
+      <img src="pumpkin.jpg" id="pic" alt="about">
+      <div class="centered">Pumpkin</div>
+    </div>
+  
+  </div>
+  
+</body>
+</html>
